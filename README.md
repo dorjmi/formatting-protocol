@@ -1,4 +1,4 @@
-# Sayo Formatting Protocol
+# Sayo Formatting Protocol (SFP)
 
 Formatting Protocol designed by Sayo.
 
@@ -8,7 +8,7 @@ Formatting Protocol designed by Sayo.
 
 ```
 Unique Naming Protocol
-Sayo Melu
+Alex Zeitlin
 ```
 
 Usage: Title name, Local file name
@@ -19,7 +19,7 @@ Attention: No 's' after noun.
 
 ```
 unique-naming-protocol
-sayo-melu
+alex-zeitlin
 ```
 
 Usage: Variable name, Online file name, Link name.
@@ -28,7 +28,7 @@ Usage: Variable name, Online file name, Link name.
 
 ```
 unique_naming_protocol
-sayo_melu
+alex_zeitlin
 ```
 
 
@@ -49,18 +49,22 @@ Usage: Time, Version number.
 [command | ctrl] + [c]
 ```
 
-'+' for press at the same time.
+`+` for press at the same time.
 
 ## Input Instruction
 
 **Instruction**
 
 ```
+[Input Instruction]
 [Input Instruction: Default Answer]
+
+[Blog URL]
 [First Name: Alex]
+
 ```
 
-**Optional**
+**Optional Instruction**
 
 ```
 2019.05.14, 01:32:25 [(Time Zone: +08:00)]
@@ -69,7 +73,7 @@ Usage: Time, Version number.
 ## Data with Value
 
 ```
-[First Name: Alex, Second Name: Underwood]
+[First Name: Alex, Last Name: Zeitlin]
 ```
 
 Array
