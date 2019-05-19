@@ -1,10 +1,47 @@
-# Sayo Formatting Protocol (SFP)
+# Sayo Formatting Protocol
 
-Formatting Protocol designed by Sayo.
+Sayo Formatting Protocol (SFP) is a formatting protocol designed by Sayo.
 
-## Text Name
+## Table of Content
+- [Sayo Formatting Protocol](#sayo-formatting-protocol)
+  - [Table of Content](#table-of-content)
+  - [Text](#text)
+    - [Name](#name)
+      - [With [space]](#with-space)
+      - [Without ' - '](#without)
+    - [User Name](#user-name)
+      - [With ' - '](#with)
+      - [Without ' - '](#without-----1)
+      - [Name Is Duplicated](#name-is-duplicated)
+    - [Keyboard Key](#keyboard-key)
+      - [Single Key](#single-key)
+      - [Multiple Key](#multiple-key)
+    - [Input Instruction](#input-instruction)
+      - [Instruction](#instruction)
+      - [Instruction with Example](#instruction-with-example)
+      - [Optional Instruction](#optional-instruction)
+    - [Quotation + Text Block](#quotation--text-block)
+      - [Latin Character](#latin-character)
+      - [CJK Character](#cjk-character)
+      - [Single Character](#single-character)
+    - [Abbreviation](#abbreviation)
+    - [Extra Information](#extra-information)
+  - [Number](#number)
+    - [Date](#date)
+    - [Array](#array)
+      - [Array](#array-1)
+      - [Array with Value](#array-with-value)
+      - [2 Dimensional Array](#2-dimensional-array)
+      - [Multidimensional Array](#multidimensional-array)
+  - [Symble](#symble)
+    - [Step](#step)
+    - [Punctuation](#punctuation)
 
-With [space]
+## Text
+
+### Name
+
+#### With [space]
 
 > Unique Naming Protocol
 >
@@ -20,7 +57,7 @@ Without [space]
 
 Usage: Variable name, Online file name, Link name.
 
-Without ' - '
+#### Without ' - '
 
 > unique_naming_protocol
 >
@@ -30,7 +67,87 @@ Attention:
 1. Use 'Noun', do not use 'Verb'
 2. No ' s ' after noun.
 
-## Date
+### User Name
+
+#### With ' - '
+
+> user-name
+
+#### Without ' - '
+
+> user_name
+
+#### Name Is Duplicated
+
+> user-name-[Identification Number: 99]
+
+### Keyboard Key
+
+#### Single Key
+
+> [space]
+
+#### Multiple Key
+
+> [command | ctrl] + [shift] + [c]
+
+Explaination: ' + ' for press at the same time.
+
+### Input Instruction
+
+#### Instruction
+
+> [Input Instruction]
+>
+> [Blog URL]
+
+#### Instruction with Example
+
+> [Input Instruction: Example]
+>
+> [First Name: Alex]
+
+#### Optional Instruction
+
+> ([Optional Instruction: Answer])
+>
+> 2019.05.14, 01:32:25 ([Time Zone: +08:00])
+
+### Quotation + Text Block
+
+#### Latin Character
+
+> 'This is a quote.'
+>
+> This is a 'Text Block'
+
+#### CJK Character
+
+CJK: Chinese Japanese Korean
+
+> 「这是一段引用」
+>
+> 这是一个「文字块」
+
+#### Single Character
+
+> ' [Single Character] '
+>
+> ' S ', ' ' '
+
+### Abbreviation
+
+Use Text Name
+
+### Extra Information
+
+> Sentence (Extra information).
+
+Usage: Adding extra information to paragraph.
+
+## Number
+
+### Date
 
 > [Year].[Month].[Day], [Hour]:[Minute]:[Second] ([Time Zone])
 >
@@ -43,41 +160,9 @@ Usage: Time, Version number.
 
 Explanation: [space] must be added, '+08:00' is optional.
 
-## Keyboard Key
+### Array
 
-Single Key
-
-> [space]
-
-Multiple Key
-
-> [command | ctrl] + [shift] + [c]
-
-Explaination: ' + ' for press at the same time.
-
-## Input Instruction
-
-Instruction
-
-> [Input Instruction]
->
-> [Blog URL]
-
-Instruction with Example
-
-> [Input Instruction: Example]
->
-> [First Name: Alex]
-
-Optional Instruction
-
-> ([Optional Instruction: Answer])
->
-> 2019.05.14, 01:32:25 ([Time Zone: +08:00])
-
-## Array
-
-Array
+#### Array
 
 > [First Item, Second Item, Third Item, ...]
 >
@@ -85,13 +170,13 @@ Array
 >
 > [Jobs, Gates, Page]
 
-Array with Value
+#### Array with Value
 
 > [First Item: First Value, Second Item: Second Value, ...]
 >
 > [First Name: Alex, Last Name: Zeitlin]
 
-2 Dimensional Array
+#### 2 Dimensional Array
 
 ``` SFP
 [9, 7, 2; 3, 5, 1; 4, 9, 3]
@@ -101,7 +186,7 @@ Array with Value
  4, 9, 3]
 ```
 
-Multidimensional Array
+#### Multidimensional Array
 
 ``` SFP
 [1, 2:
@@ -115,43 +200,17 @@ Multidimensional Array
  4, 9, 3]
 ```
 
-## Extra Information
+## Symble
 
-> Sentence (Extra information).
-
-Usage: Adding extra information to paragraph.
-
-## Quotation + Text Block
-
-Latin Character
-
-> 'This is a quote.'
->
-> This is a 'Text Block'
-
-Chinese Japanese Korean (CJK) Character
-
-> 「这是一段引用」
->
-> 这是一个「文字块」
-
-Single Character
-
-> ' [Single Character] '
->
-> ' S ', ' ' '
-
-## Step
+### Step
 
 `First -> Second -> Third`
 
 '<-' in RTL(Right To Left)
 
-
 > اول -> ثان -> ثالث
 
-
-## Punctuation
+### Punctuation
 
 ' + ': And
 
@@ -180,21 +239,3 @@ Single Character
 ' ... ': Et cetera
 
 > [First Item, Second Item, Third Item, ...]
-
-## User Name
-
-With ' - '
-
-> user-name
-
-Without ' - '
-
-> user_name
-
-Name Is Duplicated
-
-> user-name-[Identification Number: 99]
-
-## Abbreviation
-
-Use Text Name
