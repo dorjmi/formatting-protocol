@@ -4,88 +4,96 @@ Formatting Protocol designed by Sayo.
 
 ## Text Name
 
-**With [space]**
+With [space]
 
-```
-Unique Naming Protocol
-Alex Zeitlin
-```
+> Unique Naming Protocol
+>
+> Alex Zeitlin
 
 Usage: Title name, Local file name
 
-Attention: No 's' after noun.
+Without [space]
 
-**Without [space]**
-
-```
-unique-naming-protocol
-alex-zeitlin
-```
+> unique-naming-protocol
+>
+> alex-zeitlin
 
 Usage: Variable name, Online file name, Link name.
 
-**Without `-`**
+Without ' - '
 
-```
-unique_naming_protocol
-alex_zeitlin
-```
+> unique_naming_protocol
+>
+> alex_zeitlin
 
+Attention: 
+1. Use 'Noun', do not use 'Verb'
+2. No ' s ' after noun.
 
 ## Date
 
-```
-'2019.05.14, 01:32:25'
-'2019.05.14, 01:32:25 +08:00'
-```
+> [Year].[Month].[Day], [Hour]:[Minute]:[Second] ([Time Zone])
+>
+> 2019.05.14, 01:32:25
+>
+> 2019.05.14, 01:32:25 +08:00
+
 
 Usage: Time, Version number.
-[space] must be added, +08:00 is optional.
+
+Explanation: [space] must be added, '+08:00' is optional.
 
 ## Keyboard Key
 
-```
-[space]
-[command | ctrl] + [c]
-```
+Single Key
 
-`+` for press at the same time.
+> [space]
+
+Multiple Key
+
+> [command | ctrl] + [shift] + [c]
+
+Explaination: ' + ' for press at the same time.
 
 ## Input Instruction
 
-**Instruction**
+Instruction
 
-```
-[Input Instruction]
-[Input Instruction: Default Answer]
+> [Input Instruction]
+>
+> [Blog URL]
 
-[Blog URL]
-[First Name: Alex]
+Instruction with Example
 
-```
+> [Input Instruction: Example]
+>
+> [First Name: Alex]
 
-**Optional Instruction**
+Optional Instruction
 
-```
-2019.05.14, 01:32:25 [(Time Zone: +08:00)]
-```
+> ([Optional Instruction: Answer])
+>
+> 2019.05.14, 01:32:25 ([Time Zone: +08:00])
 
-## Data with Value
-
-```
-[First Name: Alex, Last Name: Zeitlin]
-```
+## Array
 
 Array
 
-```
-[9, 7, 2]
-[Jobs, Gates, Page]
-```
+> [First Item, Second Item, Third Item, ...]
+>
+> [9, 7, 2]
+>
+> [Jobs, Gates, Page]
+
+Array with Value
+
+> [First Item: First Value, Second Item: Second Value, ...]
+>
+> [First Name: Alex, Last Name: Zeitlin]
 
 2 Dimensional Array
 
-```
+``` SFP
 [9, 7, 2; 3, 5, 1; 4, 9, 3]
 
 [9, 7, 2;
@@ -95,37 +103,43 @@ Array
 
 Multidimensional Array
 
-```
-[1:
-9, 7, 2;
-3, 5, 1;
-4, 9, 3]
-
+``` SFP
 [1, 2:
-9, 7, 2;
-3, 5, 1;
-4, 9, 3]
+ 9, 7, 2;
+ 3, 5, 1;
+ 4, 9, 3]
     
 [1, 3:
-9, 7, 2;
-3, 5, 1;
-4, 9, 3]
+ 9, 7, 2;
+ 3, 5, 1;
+ 4, 9, 3]
 ```
 
 ## Extra Information
 
-```
-Sentence (Extra information).
-```
+> Sentence (Extra information).
 
 Usage: Adding extra information to paragraph.
 
-## Quote + Text Block
+## Quotation + Text Block
 
-```
-'This is a quote.'
-This is a 'Text Block'
-```
+Latin Character
+
+> 'This is a quote.'
+>
+> This is a 'Text Block'
+
+Chinese Japanese Korean (CJK) Character
+
+> 「这是一段引用」
+>
+> 这是一个「文字块」
+
+Single Character
+
+> ' [Single Character] '
+>
+> ' S ', ' ' '
 
 ## Step
 
@@ -133,28 +147,54 @@ This is a 'Text Block'
 
 '<-' in RTL(Right To Left)
 
-```
-اول -> ثان -> ثالث
-```
+
+> اول -> ثان -> ثالث
+
 
 ## Punctuation
 
-```
-'+' And: '[space] + [a]'
-'|' Or: 'He | She'
-'.' Belonging: sfp.add-item
-':' Example: `Example: Example is an example`
-```
+' + ': And
+
+> '[space] + [a]'
+
+' | ': Or
+
+> He | She
+
+' . ': Belonging
+
+> [Big].[Small]
+>
+> Father.Son, 2019.05.14, system.right
+
+' : ': Explanation + Example
+
+> Explanation: This is an explanation
+>
+> SFP: Sayo Formatting Protocol
+>
+> Example: This is an example
+>
+> First Name: Alex
+
+' ... ': Et cetera
+
+> [First Item, Second Item, Third Item, ...]
 
 ## User Name
 
-**With '-'**
-`user-name`
+With ' - '
 
-**Without '-'**
+> user-name
 
-`user_name`
+Without ' - '
 
-**Name Is Duplicated**
+> user_name
 
-`user-name-[Identification Number: 99]`
+Name Is Duplicated
+
+> user-name-[Identification Number: 99]
+
+## Abbreviation
+
+Use Text Name
