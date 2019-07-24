@@ -2,7 +2,12 @@
 
 Sayo Formatting Protocol (SFP) is a formatting protocol designed by Sayo.
 
+**To do**
+
+- Emoji
+
 ## Table of Content
+
 - [Sayo Formatting Protocol](#sayo-formatting-protocol)
   - [Table of Content](#table-of-content)
   - [Text](#text)
