@@ -21,7 +21,7 @@ to-do
     - [extra information](#extra-information)
   - [number](#number)
     - [date](#date)
-    - [Array](#array)
+    - [array](#array)
   - [symble](#symble)
     - [step](#step)
     - [punctuation](#punctuation)
@@ -31,38 +31,40 @@ to-do
 
 ### name
 
-with ' '
+with ' ', use ' '
 
 > sayo naming protocol
 >
 > alex zeitlin
+> 
+> usage: title name, local file name
 
-usage: title name, local file name
+without ' ', use '-'
 
-without ' '
-
-> unique-naming-protocol
+> sayo-formatting-protocol
 >
 > alex-zeitlin
+> 
+> usage: variable name, online file name, link name, code file name.
 
-usage: variable name, online file name, link name, code file name.
+without ' ' or '-', use '_'
 
-without ' ' or '-'
-
-> unique_naming_protocol
+> sayo_formatting_protocol
 >
 > alex_zeitlin
+>
+> not recommand: '_' is usually as subscript
 
 name in setence
 
-> my name is 'sayo melu'
-> this protocol is 'sayo format protocol'
+> my name is 'alex zeitlin'
+> this protocol is 'sayo formatting protocol'
 
 attention:
 
-1. Use fomular noun, do not use verb.
-2. No 's' after noun.
-3. File must have extension name.
+1. use noun, do not use verb.
+2. no 's' after noun.
+3. file must have extension name.
 
 ### user name
 
@@ -142,21 +144,21 @@ usage: adding extra information to paragraph.
 
 ### date
 
-> [year].[month].[day], [hour]:[minute]:[second] ([Time Zone])
+> [year].[month].[day].[hour]:[minute]:[second] ([Time Zone])
 >
 > 2019.05.14.01.32.25
 >
 > 2019.05.14.01.32.25+08:00
 
-Usage: Time, Version number.
+usage: time, version number.
 
-Explanation: no ' ', '+08:00' is optional.
+explanation: no ' ', '+08:00' is optional.
 
-### Array
+### array
 
-Array
+array
 
-> [First Item, Second Item, Third Item, ...]
+> [first item, Second Item, Third Item, ...]
 >
 > [9, 7, 2]
 >
@@ -168,28 +170,30 @@ Array with Value
 >
 > [First Name: Alex, Last Name: Zeitlin]
 
-2 Dimensional Array
+dimensional Array
 
 ``` sfp
 [9, 7, 2; 3, 5, 1; 4, 9, 3]
 
-[9, 7, 2;
- 3, 5, 1;
+[9, 7, 2
+ 3, 5, 1
  4, 9, 3]
 ```
 
-Multidimensional Array
+multi-dimensional Array
 
 ``` sfp
 [1, 2:
- 9, 7, 2;
- 3, 5, 1;
+ 9, 7, 2
+ 3, 5, 1
  4, 9, 3]
 
 [1, 3:
  9, 7, 2;
  3, 5, 1;
  4, 9, 3]
+
+[1, 2: 9, 7, 2; 3, 5, 1; 4, 9, 3]
 ```
 
 ## symble
