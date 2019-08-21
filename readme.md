@@ -5,6 +5,7 @@ sayo formatting protocol (sfp) is a formatting protocol designed by sayo.
 to-do
 
 - emoji
+- verb and noun
 
 ## table of content
 
@@ -24,6 +25,7 @@ to-do
   - [symble](#symble)
     - [step](#step)
     - [punctuation](#punctuation)
+    - [tab](#tab)
 
 ## text
 
@@ -51,9 +53,14 @@ without ' ' or '-'
 >
 > alex_zeitlin
 
+name in setence
+
+> my name is 'sayo melu'
+> this protocol is 'sayo format protocol'
+
 attention:
 
-1. Use noun, do not use verb.
+1. Use fomular noun, do not use verb.
 2. No 's' after noun.
 3. File must have extension name.
 
@@ -115,10 +122,12 @@ cjk character
 
 cjk: chinese japanese korean
 
-> 「这是一段引用」
+> '这是一段引用'
 >
-> 这是一个「文字块」
+> 这是一个 '文字块'
+> [中文输入法为什么会有全角和半角的区别?](https://www.zhihu.com/question/19605819/answer/12355856)
 
+[Chinese Copywriting Guidelines - Sparanoid](https://sparanoid.com/note/chinese-copywriting-guidelines/)
 ### abbreviation
 
 Use Text Name
@@ -222,3 +231,7 @@ Multidimensional Array
 ' ... ': Et cetera
 
 > [first item, second item, third item, ...]
+
+### tab
+
+use 2 space as a tab.
