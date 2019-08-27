@@ -1,6 +1,6 @@
-# sayo formatting protocol
+# dorjmi formatting protocol
 
-sayo formatting protocol (sfp) is a formatting protocol designed by sayo.
+dorjmi formatting protocol (dfp) is a formatting protocol designed for 'dorjmi' project.
 
 to-do
 
@@ -9,7 +9,7 @@ to-do
 
 ## table of content
 
-- [sayo formatting protocol](#sayo-formatting-protocol)
+- [dorjmi formatting protocol](#dorjmi-formatting-protocol)
   - [table of content](#table-of-content)
   - [text](#text)
     - [name](#name)
@@ -18,14 +18,17 @@ to-do
     - [input instruction](#input-instruction)
     - [quotation + text block](#quotation--text-block)
     - [abbreviation](#abbreviation)
+    - [tag](#tag)
     - [extra information](#extra-information)
   - [number](#number)
     - [date](#date)
+    - [unit](#unit)
     - [array](#array)
   - [symble](#symble)
     - [step](#step)
     - [punctuation](#punctuation)
     - [tab](#tab)
+    - [quote name](#quote-name)
 
 ## text
 
@@ -36,7 +39,7 @@ with ' ', use ' '
 > sayo naming protocol
 >
 > alex zeitlin
-> 
+>
 > usage: title name, local file name
 
 without ' ', use '-'
@@ -44,7 +47,7 @@ without ' ', use '-'
 > sayo-formatting-protocol
 >
 > alex-zeitlin
-> 
+>
 > usage: variable name, online file name, link name, code file name.
 
 without ' ' or '-', use '_'
@@ -96,43 +99,41 @@ explaination: '+' for press at the same time.
 
 instruction
 
-> [Input Instruction]
+> [input instruction]
 >
-> [Blog URL]
+> [blog url]
 
 instruction with example
 
-> [Input Instruction: Example]
+> [input instruction: example]
 >
-> [First Name: Alex]
+> [cirst name: alex]
 
 optional instruction
 
-> ([Optional Instruction: Answer])
+> ([optional instruction: answer])
 >
-> 2019.05.14, 01:32:25 ([Time Zone: +08:00])
+> 2019.05.14-01:32:25([Time Zone: +08:00])
 
 ### quotation + text block
-
-latin character
 
 > 'This is a quote.'
 >
 > This is a 'Text Block'
-
-cjk character
-
-cjk: chinese japanese korean
-
+>
 > '这是一段引用'
 >
 > 这是一个 '文字块'
-> [中文输入法为什么会有全角和半角的区别?](https://www.zhihu.com/question/19605819/answer/12355856)
 
-[Chinese Copywriting Guidelines - Sparanoid](https://sparanoid.com/note/chinese-copywriting-guidelines/)
+[中文输入法为什么会有全角和半角的区别?](https://www.zhihu.com/question/19605819/answer/12355856)
+
 ### abbreviation
 
-Use Text Name
+> dorjmi formatting protocol -> dfp
+
+### tag
+
+> [tag1, tag2] other text
 
 ### extra information
 
@@ -146,13 +147,31 @@ usage: adding extra information to paragraph.
 
 > [year].[month].[day].[hour]:[minute]:[second] ([Time Zone])
 >
-> 2019.05.14.01.32.25
+> 2019.05.14-01:32:25
 >
-> 2019.05.14.01.32.25+08:00
+> 2019.05.14-01:32:25+08:00
 
 usage: time, version number.
 
 explanation: no ' ', '+08:00' is optional.
+
+### unit
+
+byte
+
+- 1b = 2 ^ 10 byte = kilo binary byte
+- 2b = 2 ^ 20 byte = mega binary byte
+- 3b = 2 ^ 30 byte = giga binary byte
+- 4b = 2 ^ 40 byte = tera binary byte
+- 5b = 2 ^ 50 byte = peta binary byte
+
+bit
+
+- 1bi = 2 ^ 10 bit = kilo binary bit
+- ...
+
+- $, €, ¥ ...: 11$ (not $11)
+- %, ºC,  ...: 100%
 
 ### array
 
@@ -239,3 +258,11 @@ multi-dimensional Array
 ### tab
 
 use 2 space as a tab.
+
+### quote name
+
+brand name, product name, human name, artical name...
+
+> 'dorjmi formatting protocol' is developed by 'dorjmi'
+
+use original language name. jobs not 乔布斯.
